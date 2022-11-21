@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: inline;
+}
+
+.navbar_container_one {
+    flex-wrap: initial;
+}
+
+.navbar_container_two {
+    float: right;  
+}
+
+img[src="./assets/images/opeyemi-bello-passport-photograph.jpg"] {
+    
+}
+
+.first_container {
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin: 100px;
+}
+
+.third_container {
+    flex-direction: column;
+    
+}
+
+
+.fourth_container {
+    position: relative;
+    display: inline;
+    float: right;
+    top: 500px;
+}
