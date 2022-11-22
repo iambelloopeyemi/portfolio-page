@@ -1,39 +1,61 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    border: solid 10px 20px 0px 20px;
+    border-color: blue;
+    border-radius: 5px;
 }
 
-nav {
-    display: inline;
+.header_container {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
 }
 
-.navbar_container_one {
-    flex-wrap: initial;
+.navbar_left {
+    font-size: medium;
+}   
+
+.navbar_right {
+   font-size: medium;
 }
 
-.navbar_container_two {
-    float: right;  
+.navbar_right span {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.section_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 100px;
 }
 
 img[src="./assets/images/opeyemi-bello-passport-photograph.jpg"] {
-    
+height: 200px;
+width: 300px;
+margin: 100px;
 }
 
-.first_container {
-    height: 500px;
-    width: 500px;
-    float: right;
-    margin: 100px;
+.aside_container {
+    margin: 100px 100px 100px 0px;
 }
 
-.third_container {
-    flex-direction: column;
-    
+h3 {
+    margin-left: 100px;
 }
 
+.div_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 100px;
+}
 
-.fourth_container {
-    position: relative;
-    display: inline;
-    float: right;
-    top: 500px;
+.main_container {
+    margin: 10px 100px 100px 100px;
 }
