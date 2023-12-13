@@ -1,61 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 10px;
-    border: solid 10px 20px 0px 20px;
-    border-color: blue;
-    border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.header_container {
-    display: grid;
-    grid-template-columns: 800px 1fr;
-    column-gap: 100px;
-    row-gap: 100px;
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
-.navbar_left {
-    font-size: medium;
-}   
-
-.navbar_right {
-   font-size: medium;
+.portfolio-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.navbar_right span {
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
+.portfolio-logo img {
+  width: 40px;
+  height: 40px;
 }
 
-.section_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 100px;
+.portfolio-logo p {
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav ul li:last-child {
+  background-color: black;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+nav ul li:last-child a {
+  color: white;
+}
+
+main {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 0 16px;
+  margin-bottom: 64px;
 }
 
 img[src="./assets/images/opeyemi-bello-passport-photograph.jpg"] {
-height: 200px;
-width: 300px;
-margin: 100px;
+  width: auto;
+  height: auto;
 }
 
-.aside_container {
-    margin: 100px 100px 100px 0px;
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-h3 {
-    margin-left: 100px;
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 8px;
 }
 
-.div_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 100px;
-}
-
-.main_container {
-    margin: 10px 100px 100px 100px;
+button {
+  padding: 6px 12px;
 }
